@@ -6,6 +6,9 @@ package com.gabin.blesimplescanner.scanner;
 
 public class FakeBLEScannerImpl implements BLEScanner {
 
+    boolean isBLESupported;
+    boolean isBTEnabled;
+
     @Override
     public void startScan() {
 
@@ -18,12 +21,12 @@ public class FakeBLEScannerImpl implements BLEScanner {
 
     @Override
     public boolean isBTSupported() {
-        return true;
+        return isBLESupported;
     }
 
     @Override
     public boolean isBTEnabled() {
-        return true;
+        return isBTEnabled;
     }
 
     @Override

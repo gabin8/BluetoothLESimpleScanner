@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0-beta1'
+        classpath 'com.android.tools.build:gradle:2.1.0-beta3'
     }
 }
 
@@ -14,7 +14,7 @@ ext {
     buildToolsVersion = "23.0.3"
     targetSdkVersion = 23
     minSdkVersion = 21
-    gradleVersion = 'com.android.tools.build:gradle:2.1.0-beta1'
+    gradleVersion = 'com.android.tools.build:gradle:2.1.0-beta3'
 
     //app dependencies
     supportLibVersion = '23.3.0'

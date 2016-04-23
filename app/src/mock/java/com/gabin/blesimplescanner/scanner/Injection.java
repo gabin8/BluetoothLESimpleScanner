@@ -3,17 +3,16 @@ package com.gabin.blesimplescanner.scanner;
 import android.content.Context;
 
 /**
- * Enables injection of production implementation for {@link BLEScannerPresenter}
+ * Enables injection of mock implementations for {@link BLEScannerPresenter} at compile time.
  */
 public class Injection {
 
     /**
-     * Provides BLE scanner instance
+     * Provides fake BLE scanner instance
      * @param context
-     * @return BLEScanner implementation
+     * @return BLEScanner fake implementation
      */
     public static BLEScanner provideBLEScanner(Context context) {
-        return new BLEScannerImpl(context);
+        return new FakeBLEScannerImpl();
     }
-
 }

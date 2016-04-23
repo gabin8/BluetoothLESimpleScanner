@@ -20,7 +20,7 @@ public class BLEScannerPresenter implements BLEScannerContract.ActionsListener, 
     @NonNull
     private final BLEScannerContract.View mBleScannerView;
 
-    private Handler timeoutHandler;
+    Handler timeoutHandler;
 
     private Runnable timeoutRunnable;
 
