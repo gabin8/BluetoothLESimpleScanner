@@ -68,8 +68,8 @@ public class DevicesAdapter extends RecyclerView.Adapter<DevicesAdapter.ViewHold
 
         public ViewHolder(View itemView) {
             super(itemView);
-            nameTextView = (TextView) itemView.findViewById(R.id.device_name);
-            idTextView = (TextView) itemView.findViewById(R.id.device_id);
+            nameTextView = itemView.findViewById(R.id.device_name);
+            idTextView = itemView.findViewById(R.id.device_id);
         }
     }
 }

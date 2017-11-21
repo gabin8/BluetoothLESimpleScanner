@@ -34,7 +34,7 @@ public class BLEScannerActivity extends AppCompatActivity implements BLEScannerC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        final RecyclerView mRecyclerView = findViewById(R.id.recycler_view);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this,
@@ -42,7 +42,7 @@ public class BLEScannerActivity extends AppCompatActivity implements BLEScannerC
         mDevicesAdapter = new DevicesAdapter();
         mRecyclerView.setAdapter(mDevicesAdapter);
 
-        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.root_layout);
+        swipeRefreshLayout = findViewById(R.id.root_layout);
         swipeRefreshLayout.setColorSchemeColors(
                 ContextCompat.getColor(this, R.color.colorPrimary),
                 ContextCompat.getColor(this, R.color.colorAccent),

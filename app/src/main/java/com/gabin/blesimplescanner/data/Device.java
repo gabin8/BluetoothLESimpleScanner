@@ -4,7 +4,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 /**
- * Model class for device
+ * Model class for device.
  */
 public final class Device {
 

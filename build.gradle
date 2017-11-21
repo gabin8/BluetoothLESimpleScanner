@@ -2,22 +2,21 @@
 
 buildscript {
     repositories {
-        jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0-rc1'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 }
 
 ext {
-    compileSdkVersion = 23
-    buildToolsVersion = "23.0.3"
-    targetSdkVersion = 23
+    compileSdkVersion = 26
+    buildToolsVersion = "26.0.2"
+    targetSdkVersion = 24
     minSdkVersion = 21
-    gradleVersion = 'com.android.tools.build:gradle:2.1.0-rc1'
 
     //app dependencies
-    supportLibVersion = '23.3.0'
+    supportLibVersion = '26.0.0'
     junitVersion = '4.12'
     mockitoVersion = '1.10.19'
     powerMockito = '1.6.2'
@@ -30,6 +29,9 @@ ext {
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
     }
 }
 
